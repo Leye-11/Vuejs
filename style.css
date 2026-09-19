@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Start{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(56, 53, 53);
+    font-size: 25px;
+    padding: 12px 24px;
+    justify-content: space-between; 
+}
+
+.Headit{
+    display: flex;
+    gap: 40px;
+    /* text-decoration: none; */
+    /* justify-content: flex-end; */
+}
+
+.arrow{
+    display: inline-flex;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.Head a{
+    text-decoration: none;
+}
+
+.Start a{
+    text-decoration: none;
+}
+.Head a:hover{
+    color: brown;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.Play :hover{
+    
+}
