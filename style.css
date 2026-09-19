@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+.color{
+    color: #1a1a1a;
+    background-color: #1a1a1a;
+    font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
 .Start{
     display: flex;
     align-items: center;
-    gap: 200px;
+    /* gap: 200px; */
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(56, 53, 53);
@@ -44,4 +50,231 @@
 
 .Play :hover{
     
+}
+
+
+/* ==========================================
+   HERO SECTION LAYOUT
+   ========================================== */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 24px 32px;
+}
+
+/* ==========================================
+   HEADLINE GRADIENT & TYPOGRAPHY
+   ========================================== */
+.hero-title {
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  
+  /* Green on Left -> Blue on Right */
+  background: -webkit-linear-gradient(to right, #42d392, #647eff);
+  background: linear-gradient(to right, #42d392, #647eff);
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+/* Subtitle Description */
+.hero-description {
+  color: rgba(235, 235, 235, 0.6);
+  font-size: 22px;
+  font-weight: 400;
+  /* max-width: 720px; */
+  margin: 0 auto 36px auto;
+  line-height: 33px;
+}
+
+/* ==========================================
+   ACTION BUTTONS
+   ========================================== */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+/* Base Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* 1. Why Vue Button */
+.btn-green {
+  background-color: #42b883;
+  color: #213547;
+}
+
+/* 2 & 3. Get Started & Install Buttons */
+.btn-gray {
+  background-color: #32363e;
+  color: #aac8e4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 4. Get Security Updates for Vue 2 (Gradient Border + Dark Background) */
+.btn-outlined {
+  background: 
+    linear-gradient(#1a1a1a, #1a1a1a) padding-box, 
+    linear-gradient(to right, #42d392, #647eff) border-box;
+  border: 2px solid transparent;
+  color: #aac8e4;
+  border-radius: 8px;
+}
+
+/* ==========================================
+   SPONSOR BAR
+   ========================================== */
+.sponsor-bar {
+  color: rgba(235, 235, 235, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 14px 0;
+  width: 100vw;
+  text-align: center;
+  /* max-width: 900px; */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  /* margin: 0 auto; */
+  border-top: 1px solid rgba(170, 200, 228, 0.15);
+  border-bottom: 1px solid rgba(170, 200, 228, 0.15);
+}
+
+.sponsor-bar a {
+  /* color: #ffffff; */
+  color: rgba(235, 235, 235, 0.6);
+  text-decoration: none;
+}
+
+
+/* Features Grid Container */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.feature-card {
+  flex: 1;
+}
+
+/* Feature Title */
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin-bottom: 12px;
+  font-weight: 24px;
+}
+
+/* Highlight the first letter with Vue Green */
+.feature-card h3::first-letter {
+  color: #42d392;
+}
+
+/* Body text */
+.feature-card p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(235, 235, 235, 0.6);
+  margin: 0;
+  max-width: 190px;
+}
+
+/* ==========================================
+   SPONSORS SECTION LAYOUT
+   ========================================== */
+.sponsors-section {
+  max-width: 1150px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.sponsor-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* 4-Column Grid with Shared Inner Borders */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.08); /* Grid border line color */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Sponsor Card Base State */
+.sponsor-card {
+  background-color: #242424;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+/* Grayscale Filter on Logos */
+.sponsor-card img {
+  max-height: 42px;
+  max-width: 80%;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.8);
+  opacity: 0.85;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover State: White Background + Full Color Logo */
+.sponsor-card:hover {
+  background-color: #ffffff;
+}
+
+.sponsor-card:hover img {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+}
+
+/* Become a Sponsor Cell Styling */
+.sponsor-card.become-sponsor {
+  color: rgba(235, 235, 235, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sponsor-card.become-sponsor:hover {
+  background-color: #2a2a2a;
+  color: #aac8e4;
 }
